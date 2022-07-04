@@ -352,9 +352,14 @@ $(document).ready(function () {
         $("html, body").animate({ scrollTop: $('#turs-container').offset().top }, 400);
     })
 })
-// var a = document.getElementById("zakazat-tur");
-// a.onclick = function () {
-//     document.getElementById("turs-container").style.display = "block";
-//     document.getElementById("vybrat-tur").style.display = "none";
-//     return false;
-// }
+// ----------------------------------------------------------------------------
+$(document).ready(function () {
+    $("#navMenu").flexMenu({
+        showOnHover: false,
+        linkText: "Еще...",
+        linkTitle: "Показать еще",
+        linkTextAll: "Меню",
+        linkTitleAll: "Развернуть меню", 
+        popupClass: 'more_dropdown'
+    });
+});
